@@ -1,6 +1,6 @@
-## todo Overall description
+## Functions for cacheable calculating the inverse matrix
 
-## todo Write a short comment describing this function
+## Returns the special 'matrix', which has ability to cache result of inversion
 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
@@ -32,7 +32,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## todo Write a short comment describing this function
+## Inverse special 'matrix', writes result in cache, and returns result
+## If cache is not empty, then the cached result will be returned
 
 cacheSolve <- function(x, ...) {
     i <- x$getinverse()
